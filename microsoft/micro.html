@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
+     <link rel="stylesheet" href="css/micro.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+      <div class="container">
+     
+           <nav class="main-nav">
+                <img class="logo" src="Picture/ocean.jpg" alt="">
+                <ul class="main-menu">
+                     <li><a href="#">home</a></li>
+                     <li><a href="#">services</a></li>
+                     <li><a href="#">gallery</a></li>
+                     <li><a href="#">microsoft</a></li>
+                     <li><a href="#">windows</a></li>
+
+                </ul>
+                <ul class="left-menu">
+                    
+                    <li><a href="https://www.facebook.com/"> <i class="fab fa-facebook "></i></a></li>
+                    <li><a href="https://twitter.com/"><i class="fab fa-twitter "></i></a></li>
+                    <li><a href="https://www.google.com/"> <i class="fa fa-search "></i></a></li>
+                    <li><a href="#"><i class="fa fa-bars  menu-btn"></i></a></li>
+                    
+                   
+                    <!-- <i class="fa fa-car"></i>  -->
+               </ul>
+          </nav>
+
+          <h1>hello from heading one <i class="fa fa-car"></i></h1>
+      </div>
+      <h1 class="bttn">result will disply here</h1>
+      <button class="btn">
+           click for result
+      </button>
+
+
+<script>
+
+     
+var btn =document.querySelector('.menu-btn');
+
+btn.addEventListener('click',function(){
+document.querySelector('.main-menu').classList.toggle('show');
+});
+
+
+// document.querySelector('.menu-btn').addEventListener
+// ('click', () =>document.querySelector('.main-menu')
+// .classList.toggle('show'));
+
+
+
+
+// let hi =  prompt('Gusses a number');
+
+//  function reuseme(va){
+//      if(va < 12){
+//           return 'You type right number';
+//      };
+    
+     
+//      return " No ! You  don't type right number";
+// };
+
+//  console.log(reuseme(hi));
+
+
+// let mul = prompt('enter first number number');
+
+// let mull = prompt('enter second number');
+
+//  function multiply(a ,b){
+//       let c = a * b;
+//       return  c;
+ 
+//  }
+
+//  console.log(multiply(mul,mull));
+
+
+//  var but = document.querySelector('.btn');
+//  but.addEventListener('click',function(){
+    
+//      document.querySelector('.bttn').innerHTML = reuseme(hi);
+
+// });
+
+
+
+</script>
+ 
+</body>
+</html>

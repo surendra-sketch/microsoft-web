@@ -1,0 +1,108 @@
+*{
+     margin: 0;
+     padding: 0;
+}
+body{
+     font-size: 15px;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     background-color: #fff;
+     color: #262626;
+     line-height: 1.5;
+}
+ul{
+     list-style: none;
+}
+a{
+     text-decoration: none;
+     color: #fff;
+     text-transform: uppercase;
+
+}
+.container{
+    
+     /* max-width: 1100px; */
+     width:95%;
+     background-color: #ddd;
+     margin: auto;
+}
+ 
+nav{ 
+     background-color: #00a;
+     width: 100%;
+}
+.main-nav{
+     display:flex;
+     align-items: center;
+     justify-content:space-between;
+     padding: 20px 0px;
+     height: 60px;
+     font-size: 14px;
+}
+
+.main-nav .logo{
+     width: 90px;
+     border-radius: 20px;
+
+}
+.main-nav ul{
+     display: flex;
+
+ }
+.main-nav ul li{
+     padding: 0px 10px;
+    
+}
+.main-nav ul li a{
+      padding-bottom: 2px;
+}
+.main-nav .main-menu li a:hover{
+     border-bottom: 2px solid #fff;
+}
+ 
+.main-nav ul.main-menu{
+     margin-left: 20px;
+     flex: 1;
+}
+.left-menu ul i{
+     display: flex;
+     padding: 0 40px;
+}
+.main-nav .left-menu .fab-facebook {
+     font-size:30px;
+     color: red;
+     background-color: #fff;
+}
+.fa-twitter,.fa-search ,.fa-facebook ,.fa-bars{
+     font-size: 2rem;
+
+ }
+
+.fa-bars{
+
+font-size: 3rem;
+position: relative;
+
+}
+
+@media(max-width:700px){
+     .main-nav ul.main-menu{
+          position: absolute;
+          display: block;
+          z-index: 1;
+          width: 200px;
+          height: 100vh;
+          text-align: left;
+          padding-top: 10px;
+          background-color: #00a;
+          top: 0;
+          left: -4px;
+          transform: translateX(-500px);
+          transition: .6s ease-in-out;
+     }
+     .main-nav ul.main-menu.show{
+     transform:translateX(-20px);
+     }
+     .main-nav .main-menu li{
+          padding: 15px 10px;
+     }
+}
